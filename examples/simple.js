@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Block from '../src';
+import Block from 'dxc-flex';
 
 class Simple extends Component {
   render() {

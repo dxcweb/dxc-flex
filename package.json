@@ -1,6 +1,6 @@
 {
   "name": "dxc-flex",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "react版本flex简写布局,支持native",
   "keywords": ["react", "flex"],
   "homepage": "https://github.com/dxcweb/dxc-flex",
@@ -15,6 +15,7 @@
   },
   "scripts": {
     "build": "rc-tools run build",
+    "es": "rc-tools run es",
     "gh-pages": "rc-tools run gh-pages",
     "start": "rc-tools run server",
     "pub": "rc-tools run update-self && rc-tools run pub",
@@ -27,6 +28,7 @@
     "react-dom": "^16.2.0"
   },
   "dependencies": {},
-  "files": ["assets", "examples", "lib", "src"],
+  "typings": "./typings/index.d.ts",
+  "files": ["assets", "examples", "lib", "src", "typings"],
   "main": "./lib"
 }

@@ -1,5 +1,5 @@
 import * as React from 'react';
-export interface PageHeaderProps {
+export interface BlockProps {
   el?: React.ReactNode | string;
   style?: React.CSSProperties;
   /**
@@ -16,4 +16,4 @@ export interface PageHeaderProps {
   vertical: 'start' | 'center' | 'end' | 'around' | 'between';
 }
 
-export default class PageHeader extends React.Component<PageHeaderProps, any> {}
+export default class Block extends React.Component<BlockProps, any> {}
