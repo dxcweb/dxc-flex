@@ -1,10 +1,15 @@
 {
   "name": "dxc-flex",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "react版本flex简写布局,支持native",
-  "keywords": ["react", "flex"],
+  "keywords": [
+    "react",
+    "flex"
+  ],
   "homepage": "https://github.com/dxcweb/dxc-flex",
-  "maitainers": ["605863278@qq.com"],
+  "maitainers": [
+    "605863278@qq.com"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/dxcweb/dxc-flex.git"
@@ -29,6 +34,12 @@
   },
   "dependencies": {},
   "typings": "./typings/index.d.ts",
-  "files": ["assets", "examples", "lib", "src", "typings"],
+  "files": [
+    "assets",
+    "examples",
+    "lib",
+    "src",
+    "typings"
+  ],
   "main": "./lib"
 }
