@@ -1,5 +1,8 @@
 import * as React from 'react';
 export interface BlockProps {
+  /**
+   * 指定元素默认div
+   */
   el?: React.ReactNode | string;
   style?: React.CSSProperties;
   /**
