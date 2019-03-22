@@ -1,5 +1,5 @@
 # dxc-flex
-dxc-flex是一套简洁、优雅的react flex布局组件，支持native。
+dxc-flex是一套简洁、优雅的react flex布局组件，支持native。  
 完整的TypedDefinition，ide提示快速完成开发。
 ## install
 
