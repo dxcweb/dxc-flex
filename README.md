@@ -7,9 +7,9 @@ dxc-flex是一套简洁、优雅的react flex布局组件，支持native。
 yarn add dxc-flex
 ```
 ## Example
-[位置](http://www.dxcweb.com/api/dxc-flex/examples/simple.html)
-[布局方式](http://www.dxcweb.com/api/dxc-flex/examples/layout.html)
-[Flex布局](http://www.dxcweb.com/api/dxc-flex/examples/flex.html)
+[位置](http://www.dxcweb.com/api/dxc-flex/examples/simple.html)  
+[布局方式](http://www.dxcweb.com/api/dxc-flex/examples/layout.html)  
+[Flex布局](http://www.dxcweb.com/api/dxc-flex/examples/flex.html)  
 
 ## API
 <table class="table table-bordered table-striped">
