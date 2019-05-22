@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>simple.js - example - dxc-flex@1.0.3</title>
+  <title>simple.js - example - dxc-flex@2.0.0</title>
   <meta name="viewport"
         content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
   <meta charset="utf-8"/>
@@ -257,40 +257,75 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
     document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"'+'>'+'<'+'/'+'script>');
   }
   </script>
-  <link rel="stylesheet" href="simple.css" />
+  <link rel="stylesheet" href="../common.css" />
 </head>
 
 <body>
   <div class="container">
     <div class="header">
-      <h1>dxc-flex@1.0.3</h1>
+      <h1>dxc-flex@2.0.0</h1>
 
       <p>react版本flex简写布局,支持native</p>
     </div>
     <div class="example" id="__react-content"></div>
 
-    <div class="highlight"><pre><code language="js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
-<span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">'react-dom'</span>;
-<span class="hljs-keyword">import</span> Block <span class="hljs-keyword">from</span> <span class="hljs-string">'dxc-flex'</span>;
+    <div class="highlight"><pre><code language="js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">"react"</span>;
+<span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">"react-dom"</span>;
+<span class="hljs-keyword">import</span> Block <span class="hljs-keyword">from</span> <span class="hljs-string">"dxc-flex"</span>;
 
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Simple</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
-      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">Block</span>
-          <span class="hljs-attribute">layout</span>=<span class="hljs-value">"vertical"</span>
-          <span class="hljs-attribute">vertical</span>=<span class="hljs-value">"between"</span>
-          <span class="hljs-attribute">horizontal</span>=<span class="hljs-value">"center"</span>
-          <span class="hljs-attribute">style</span>=<span class="hljs-value">{{</span> <span class="hljs-attribute">width:</span> <span class="hljs-attribute">300</span>, <span class="hljs-attribute">height:</span> <span class="hljs-attribute">300</span>, <span class="hljs-attribute">margin:</span> <span class="hljs-attribute">50</span>, <span class="hljs-attribute">borderWidth:</span> <span class="hljs-attribute">1</span>, <span class="hljs-attribute">borderStyle:</span> '<span class="hljs-attribute">solid</span>' }}
-        &gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{{</span> <span class="hljs-attribute">width:</span> <span class="hljs-attribute">100</span>, <span class="hljs-attribute">height:</span> <span class="hljs-attribute">100</span>, <span class="hljs-attribute">background:</span> '#<span class="hljs-attribute">f1f1f1</span>' }}&gt;</span>123<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{{</span> <span class="hljs-attribute">width:</span> <span class="hljs-attribute">100</span>, <span class="hljs-attribute">height:</span> <span class="hljs-attribute">100</span>, <span class="hljs-attribute">background:</span> '#<span class="hljs-attribute">f1f1f1</span>' }}&gt;</span>123<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{{</span> <span class="hljs-attribute">margin:</span> <span class="hljs-attribute">50</span> }}&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h3</span>&gt;</span>垂直居中<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Block</span> <span class="hljs-attribute">vertical</span>=<span class="hljs-value">"center"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{{</span> <span class="hljs-attribute">width:</span> <span class="hljs-attribute">300</span>, <span class="hljs-attribute">height:</span> <span class="hljs-attribute">300</span>, <span class="hljs-attribute">borderWidth:</span> <span class="hljs-attribute">1</span>, <span class="hljs-attribute">border:</span> "<span class="hljs-attribute">1px</span> <span class="hljs-attribute">solid</span> #<span class="hljs-attribute">333</span>" }}&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">Block</span> <span class="hljs-attribute">horizontal</span>=<span class="hljs-value">"center"</span> <span class="hljs-attribute">vertical</span>=<span class="hljs-value">"center"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{{</span> <span class="hljs-attribute">width:</span> <span class="hljs-attribute">80</span>, <span class="hljs-attribute">height:</span> <span class="hljs-attribute">80</span>, <span class="hljs-attribute">background:</span> "#<span class="hljs-attribute">f1f1f1</span>" }}&gt;</span>
+            1
+          <span class="hljs-tag">&lt;/<span class="hljs-title">Block</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">Block</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h3</span>&gt;</span>水平居中<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Block</span> <span class="hljs-attribute">horizontal</span>=<span class="hljs-value">"center"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{{</span> <span class="hljs-attribute">width:</span> <span class="hljs-attribute">300</span>, <span class="hljs-attribute">height:</span> <span class="hljs-attribute">300</span>, <span class="hljs-attribute">borderWidth:</span> <span class="hljs-attribute">1</span>, <span class="hljs-attribute">border:</span> "<span class="hljs-attribute">1px</span> <span class="hljs-attribute">solid</span> #<span class="hljs-attribute">333</span>" }}&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">Block</span> <span class="hljs-attribute">horizontal</span>=<span class="hljs-value">"center"</span> <span class="hljs-attribute">vertical</span>=<span class="hljs-value">"center"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{{</span> <span class="hljs-attribute">width:</span> <span class="hljs-attribute">80</span>, <span class="hljs-attribute">height:</span> <span class="hljs-attribute">80</span>, <span class="hljs-attribute">background:</span> "#<span class="hljs-attribute">f1f1f1</span>" }}&gt;</span>
+            1
+          <span class="hljs-tag">&lt;/<span class="hljs-title">Block</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">Block</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h3</span>&gt;</span>垂直水平居中<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Block</span> <span class="hljs-attribute">horizontal</span>=<span class="hljs-value">"center"</span> <span class="hljs-attribute">vertical</span>=<span class="hljs-value">"center"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{{</span> <span class="hljs-attribute">width:</span> <span class="hljs-attribute">300</span>, <span class="hljs-attribute">height:</span> <span class="hljs-attribute">300</span>, <span class="hljs-attribute">borderWidth:</span> <span class="hljs-attribute">1</span>, <span class="hljs-attribute">border:</span> "<span class="hljs-attribute">1px</span> <span class="hljs-attribute">solid</span> #<span class="hljs-attribute">333</span>" }}&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">Block</span> <span class="hljs-attribute">horizontal</span>=<span class="hljs-value">"center"</span> <span class="hljs-attribute">vertical</span>=<span class="hljs-value">"center"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{{</span> <span class="hljs-attribute">width:</span> <span class="hljs-attribute">80</span>, <span class="hljs-attribute">height:</span> <span class="hljs-attribute">80</span>, <span class="hljs-attribute">background:</span> "#<span class="hljs-attribute">f1f1f1</span>" }}&gt;</span>
+            1
+          <span class="hljs-tag">&lt;/<span class="hljs-title">Block</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">Block</span>&gt;</span>
+
+
+        <span class="hljs-tag">&lt;<span class="hljs-title">h3</span>&gt;</span>子元素两侧的间隔相等<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Block</span> <span class="hljs-attribute">horizontal</span>=<span class="hljs-value">"around"</span> <span class="hljs-attribute">vertical</span>=<span class="hljs-value">"center"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{{</span> <span class="hljs-attribute">width:</span> <span class="hljs-attribute">300</span>, <span class="hljs-attribute">height:</span> <span class="hljs-attribute">300</span>, <span class="hljs-attribute">borderWidth:</span> <span class="hljs-attribute">1</span>, <span class="hljs-attribute">border:</span> "<span class="hljs-attribute">1px</span> <span class="hljs-attribute">solid</span> #<span class="hljs-attribute">333</span>" }}&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">Block</span> <span class="hljs-attribute">horizontal</span>=<span class="hljs-value">"center"</span> <span class="hljs-attribute">vertical</span>=<span class="hljs-value">"center"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{{</span> <span class="hljs-attribute">width:</span> <span class="hljs-attribute">80</span>, <span class="hljs-attribute">height:</span> <span class="hljs-attribute">80</span>, <span class="hljs-attribute">background:</span> "#<span class="hljs-attribute">f1f1f1</span>" }}&gt;</span>
+            1
+          <span class="hljs-tag">&lt;/<span class="hljs-title">Block</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">Block</span> <span class="hljs-attribute">horizontal</span>=<span class="hljs-value">"center"</span> <span class="hljs-attribute">vertical</span>=<span class="hljs-value">"center"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{{</span> <span class="hljs-attribute">width:</span> <span class="hljs-attribute">80</span>, <span class="hljs-attribute">height:</span> <span class="hljs-attribute">80</span>, <span class="hljs-attribute">background:</span> "#<span class="hljs-attribute">f1f1f1</span>" }}&gt;</span>
+            2
+          <span class="hljs-tag">&lt;/<span class="hljs-title">Block</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">Block</span> <span class="hljs-attribute">horizontal</span>=<span class="hljs-value">"center"</span> <span class="hljs-attribute">vertical</span>=<span class="hljs-value">"center"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{{</span> <span class="hljs-attribute">width:</span> <span class="hljs-attribute">80</span>, <span class="hljs-attribute">height:</span> <span class="hljs-attribute">80</span>, <span class="hljs-attribute">background:</span> "#<span class="hljs-attribute">f1f1f1</span>" }}&gt;</span>
+            3
+          <span class="hljs-tag">&lt;/<span class="hljs-title">Block</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">Block</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h3</span>&gt;</span>子元素两端对齐，项目之间的间隔都相等<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Block</span> <span class="hljs-attribute">horizontal</span>=<span class="hljs-value">"between"</span> <span class="hljs-attribute">vertical</span>=<span class="hljs-value">"center"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{{</span> <span class="hljs-attribute">width:</span> <span class="hljs-attribute">300</span>, <span class="hljs-attribute">height:</span> <span class="hljs-attribute">300</span>, <span class="hljs-attribute">borderWidth:</span> <span class="hljs-attribute">1</span>, <span class="hljs-attribute">border:</span> "<span class="hljs-attribute">1px</span> <span class="hljs-attribute">solid</span> #<span class="hljs-attribute">333</span>" }}&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">Block</span> <span class="hljs-attribute">horizontal</span>=<span class="hljs-value">"center"</span> <span class="hljs-attribute">vertical</span>=<span class="hljs-value">"center"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{{</span> <span class="hljs-attribute">width:</span> <span class="hljs-attribute">80</span>, <span class="hljs-attribute">height:</span> <span class="hljs-attribute">80</span>, <span class="hljs-attribute">background:</span> "#<span class="hljs-attribute">f1f1f1</span>" }}&gt;</span>
+            1
+          <span class="hljs-tag">&lt;/<span class="hljs-title">Block</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">Block</span> <span class="hljs-attribute">horizontal</span>=<span class="hljs-value">"center"</span> <span class="hljs-attribute">vertical</span>=<span class="hljs-value">"center"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{{</span> <span class="hljs-attribute">width:</span> <span class="hljs-attribute">80</span>, <span class="hljs-attribute">height:</span> <span class="hljs-attribute">80</span>, <span class="hljs-attribute">background:</span> "#<span class="hljs-attribute">f1f1f1</span>" }}&gt;</span>
+            2
+          <span class="hljs-tag">&lt;/<span class="hljs-title">Block</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">Block</span> <span class="hljs-attribute">horizontal</span>=<span class="hljs-value">"center"</span> <span class="hljs-attribute">vertical</span>=<span class="hljs-value">"center"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{{</span> <span class="hljs-attribute">width:</span> <span class="hljs-attribute">80</span>, <span class="hljs-attribute">height:</span> <span class="hljs-attribute">80</span>, <span class="hljs-attribute">background:</span> "#<span class="hljs-attribute">f1f1f1</span>" }}&gt;</span>
+            3
+          <span class="hljs-tag">&lt;/<span class="hljs-title">Block</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">Block</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
     )</span>;
   }
 }
-ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Simple</span> /&gt;</span>, document.getElementById('__react-content'));
+ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Simple</span> /&gt;</span>, document.getElementById("__react-content"));
 </span></code></pre></div>
   </div>
   <a href="https://github.com/dxcweb/dxc-flex">

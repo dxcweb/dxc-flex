@@ -1,14 +1,14 @@
-webpackJsonp([0],{
+webpackJsonp([2],{
 
-/***/ 25:
+/***/ 8:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(26);
+module.exports = __webpack_require__(9);
 
 
 /***/ }),
 
-/***/ 26:
+/***/ 9:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29,118 +29,129 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-var Simple = function (_Component) {
-  _inherits(Simple, _Component);
+var Flex = function (_Component) {
+  _inherits(Flex, _Component);
 
-  function Simple() {
-    _classCallCheck(this, Simple);
+  function Flex() {
+    _classCallCheck(this, Flex);
 
     return _possibleConstructorReturn(this, _Component.apply(this, arguments));
   }
 
-  Simple.prototype.render = function render() {
+  Flex.prototype.render = function render() {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       "div",
       { style: { margin: 50 } },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        "h2",
+        null,
+        "Flex \u5E03\u5C40"
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        "div",
+        null,
+        "\u522B\u5728\u7528\u5C34\u5C2C\u768412\u6805\u683C\u548C24\u6805\u683C\uFF0C\u6765\u4F7F\u7528flex\u5E03\u5C40\uFF0C\u641E\u5B9A\u4E00\u5207\u3002"
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         "h3",
         null,
-        "\u5782\u76F4\u5C45\u4E2D"
+        "\u5E73\u5206\u5BBD\u5EA6"
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_2_dxc_flex___default.a,
         { vertical: "center", style: { width: 300, height: 300, borderWidth: 1, border: "1px solid #333" } },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           __WEBPACK_IMPORTED_MODULE_2_dxc_flex___default.a,
-          { horizontal: "center", vertical: "center", style: { width: 80, height: 80, background: "#f1f1f1" } },
-          "1"
-        )
-      ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        "h3",
-        null,
-        "\u6C34\u5E73\u5C45\u4E2D"
-      ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        __WEBPACK_IMPORTED_MODULE_2_dxc_flex___default.a,
-        { horizontal: "center", style: { width: 300, height: 300, borderWidth: 1, border: "1px solid #333" } },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          __WEBPACK_IMPORTED_MODULE_2_dxc_flex___default.a,
-          { horizontal: "center", vertical: "center", style: { width: 80, height: 80, background: "#f1f1f1" } },
-          "1"
-        )
-      ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        "h3",
-        null,
-        "\u5782\u76F4\u6C34\u5E73\u5C45\u4E2D"
-      ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        __WEBPACK_IMPORTED_MODULE_2_dxc_flex___default.a,
-        { horizontal: "center", vertical: "center", style: { width: 300, height: 300, borderWidth: 1, border: "1px solid #333" } },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          __WEBPACK_IMPORTED_MODULE_2_dxc_flex___default.a,
-          { horizontal: "center", vertical: "center", style: { width: 80, height: 80, background: "#f1f1f1" } },
-          "1"
-        )
-      ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        "h3",
-        null,
-        "\u5B50\u5143\u7D20\u4E24\u4FA7\u7684\u95F4\u9694\u76F8\u7B49"
-      ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        __WEBPACK_IMPORTED_MODULE_2_dxc_flex___default.a,
-        { horizontal: "around", vertical: "center", style: { width: 300, height: 300, borderWidth: 1, border: "1px solid #333" } },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          __WEBPACK_IMPORTED_MODULE_2_dxc_flex___default.a,
-          { horizontal: "center", vertical: "center", style: { width: 80, height: 80, background: "#f1f1f1" } },
+          { horizontal: "center", vertical: "center", style: { flex: 1, height: 80, background: "#f1f1f1", border: "1px solid #333" } },
           "1"
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           __WEBPACK_IMPORTED_MODULE_2_dxc_flex___default.a,
-          { horizontal: "center", vertical: "center", style: { width: 80, height: 80, background: "#f1f1f1" } },
+          { horizontal: "center", vertical: "center", style: { flex: 1, height: 80, background: "#f1f1f1", border: "1px solid #333" } },
           "2"
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           __WEBPACK_IMPORTED_MODULE_2_dxc_flex___default.a,
-          { horizontal: "center", vertical: "center", style: { width: 80, height: 80, background: "#f1f1f1" } },
+          { horizontal: "center", vertical: "center", style: { flex: 1, height: 80, background: "#f1f1f1", border: "1px solid #333" } },
           "3"
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         "h3",
         null,
-        "\u5B50\u5143\u7D20\u4E24\u7AEF\u5BF9\u9F50\uFF0C\u9879\u76EE\u4E4B\u95F4\u7684\u95F4\u9694\u90FD\u76F8\u7B49"
+        "\u56FA\u5B9A\u5BBD\u5EA6+\u5269\u4F59\u81EA\u52A8\u586B\u6EE1"
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_2_dxc_flex___default.a,
-        { horizontal: "between", vertical: "center", style: { width: 300, height: 300, borderWidth: 1, border: "1px solid #333" } },
+        { vertical: "center", style: { width: 300, height: 300, borderWidth: 1, border: "1px solid #333" } },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           __WEBPACK_IMPORTED_MODULE_2_dxc_flex___default.a,
-          { horizontal: "center", vertical: "center", style: { width: 80, height: 80, background: "#f1f1f1" } },
-          "1"
+          { horizontal: "center", vertical: "center", style: { width: 120, height: 80, background: "#f1f1f1", border: "1px solid #333" } },
+          "\u56FA\u5B9A\u5BBD\u5EA6120px"
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           __WEBPACK_IMPORTED_MODULE_2_dxc_flex___default.a,
-          { horizontal: "center", vertical: "center", style: { width: 80, height: 80, background: "#f1f1f1" } },
+          { horizontal: "center", vertical: "center", style: { flex: 1, height: 80, background: "#f1f1f1", border: "1px solid #333" } },
+          "\u81EA\u52A8\u586B\u6EE1\u5269\u4F59\u90E8\u5206"
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        "h3",
+        null,
+        "\u6309\u6BD4\u4F8B\uFF1A2:1:1"
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_2_dxc_flex___default.a,
+        { vertical: "center", style: { width: 300, height: 300, borderWidth: 1, border: "1px solid #333" } },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_2_dxc_flex___default.a,
+          { horizontal: "center", vertical: "center", style: { flex: 2, height: 80, background: "#f1f1f1", border: "1px solid #333" } },
           "2"
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           __WEBPACK_IMPORTED_MODULE_2_dxc_flex___default.a,
-          { horizontal: "center", vertical: "center", style: { width: 80, height: 80, background: "#f1f1f1" } },
-          "3"
+          { horizontal: "center", vertical: "center", style: { flex: 1, height: 80, background: "#f1f1f1", border: "1px solid #333" } },
+          "1"
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_2_dxc_flex___default.a,
+          { horizontal: "center", vertical: "center", style: { flex: 1, height: 80, background: "#f1f1f1", border: "1px solid #333" } },
+          "1"
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        "h3",
+        null,
+        "\u5782\u76F4\u5E03\u5C40\u5199\u6CD5\u4E00\u6837"
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_2_dxc_flex___default.a,
+        { layout: "vertical", horizontal: "center", style: { width: 300, height: 300, borderWidth: 1, border: "1px solid #333" } },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_2_dxc_flex___default.a,
+          { horizontal: "center", vertical: "center", style: { flex: 2, width: 80, background: "#f1f1f1", border: "1px solid #333" } },
+          "2"
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_2_dxc_flex___default.a,
+          { horizontal: "center", vertical: "center", style: { flex: 1, width: 80, background: "#f1f1f1", border: "1px solid #333" } },
+          "1"
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_2_dxc_flex___default.a,
+          { horizontal: "center", vertical: "center", style: { flex: 1, width: 80, background: "#f1f1f1", border: "1px solid #333" } },
+          "1"
         )
       )
     );
   };
 
-  return Simple;
+  return Flex;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Simple, null), document.getElementById("__react-content"));
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Flex, null), document.getElementById("__react-content"));
 
 /***/ })
 
-},[25]);
-//# sourceMappingURL=simple.js.map
+},[8]);
+//# sourceMappingURL=flex.js.map

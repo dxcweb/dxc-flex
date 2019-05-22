@@ -7,7 +7,7 @@
   <meta charset="utf-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css" rel="stylesheet"/>
-  <title>dxc-flex@1.0.3 - react版本flex简写布局,支持native</title>
+  <title>dxc-flex@2.0.0 - react版本flex简写布局,支持native</title>
   <style>
     @font-face {
       font-family: octicons-anchor;
@@ -737,12 +737,16 @@
 
 <body>
 <div class="header">
-  <h1>dxc-flex@1.0.3</h1>
+  <h1>dxc-flex@2.0.0</h1>
 </div>
 <div class="examples">
   <h3>EXAMPLES</h3>
   <div class="examples-body">
     <ul>
+      
+      <li><a href="examples/flex.html">flex</a></li>
+      
+      <li><a href="examples/layout.html">layout</a></li>
       
       <li><a href="examples/simple.html">simple</a></li>
       
@@ -752,7 +756,45 @@
 <div id="readme" class="boxed-group">
   <h3>README.md</h3>
   <div class="markdown-body">
-    <h1>dxc-flex<a id="user-content-dxc-flex" name="dxc-flex" class="anchor" aria-hidden="true" href="#dxc-flex"><span class="octicon octicon-link"></span></a></h1><p>react版本flex简写布局,支持native</p>
+    <h1>dxc-flex<a id="user-content-dxc-flex" name="dxc-flex" class="anchor" aria-hidden="true" href="#dxc-flex"><span class="octicon octicon-link"></span></a></h1><p>dxc-flex是一套简洁、优雅的react flex布局组件，支持react native。<br>完整的TypedDefinition，ide提示快速完成开发。</p>
+<h2>install<a id="user-content-install" name="install" class="anchor" aria-hidden="true" href="#install"><span class="octicon octicon-link"></span></a></h2><div class="highlight"><pre><code language="undefined">yarn add dxc-flex</code></pre></div><h2>Example<a id="user-content-example" name="example" class="anchor" aria-hidden="true" href="#example"><span class="octicon octicon-link"></span></a></h2><p><a href="http://www.dxcweb.com/api/dxc-flex/examples/simple.html" title="null">位置</a><br><a href="http://www.dxcweb.com/api/dxc-flex/examples/layout.html" title="null">布局方式</a><br><a href="http://www.dxcweb.com/api/dxc-flex/examples/flex.html" title="null">Flex布局</a>  </p>
+<h2>API<a id="user-content-api" name="api" class="anchor" aria-hidden="true" href="#api"><span class="octicon octicon-link"></span></a></h2><table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th style="width: 100px;">Name</th>
+            <th style="width: 210px;">Type</th>
+            <th>Default</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>layout</td>
+            <td>String</td>
+            <td>horizontal</td>
+            <td>布局方式: horizontal（水平布局），vertical（垂直布局），flow（流布局）</td>
+          </tr>
+          <tr>
+            <td>horizontal</td>
+            <td>String</td>
+            <td>start</td>
+            <td>水平方向: start（开始）center（居中）end（结束），around与between只能在 layout=&quot;horizontal&quot;时有效。</td>
+          </tr>
+          <tr>
+            <td>vertical</td>
+            <td>String</td>
+            <td>start</td>
+            <td>垂直方向: start（开始）center（居中）end（结束），around与between只能在 layout=&quot;vertical&quot;时有效。</td>
+          </tr>
+          <tr>
+            <td>el</td>
+            <td>React.ReactNode | String</td>
+            <td>div</td>
+            <td>自定元素可以是react的组件也可以是html标签</td>
+          </tr>
+        </tbody>
+      </table>
+
 
   </div>
 </div>
