@@ -2,7 +2,7 @@ import React from "react";
 import { View } from "react-native";
 export default class Block extends React.PureComponent {
   render() {
-    const { style, el = View, layout = "horizontal", horizontal, vertical } = this.props;
+    const { style, el = View, layout = "horizontal", horizontal, vertical, ...other } = this.props;
     const El = el;
     const newStyle = {};
     if (layout === "horizontal") {
@@ -57,6 +57,10 @@ export default class Block extends React.PureComponent {
         newStyle.alignItems = "space-between";
         break;
     }
-    return <El style={[newStyle, style]}>{this.props.children}</El>;
+    return (
+      <El style={[newStyle, style]} {...other}>
+        {this.props.children}
+      </El>
+    );
   }
 }

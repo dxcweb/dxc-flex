@@ -1,6 +1,6 @@
 {
   "name": "dxc-flex",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "react版本flex简写布局,支持native",
   "keywords": [
     "react",
