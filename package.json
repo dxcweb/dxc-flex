@@ -1,12 +1,13 @@
 {
   "name": "dxc-flex",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "react版本flex简写布局",
   "main": "lib/index.js",
   "module": "es/index.js",
   "typings": "./typings/index.d.ts",
   "files": [
     "assets",
+    "typings",
     "css",
     "es",
     "lib",
