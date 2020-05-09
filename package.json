@@ -1,6 +1,6 @@
 {
   "name": "dxc-flex",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "react版本flex简写布局",
   "main": "lib/index.js",
   "module": "es/index.js",
