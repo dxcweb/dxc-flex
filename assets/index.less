@@ -1,0 +1,92 @@
+@prefix: pano-button;
+
+.@{prefix} {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 3px;
+  user-select: none;
+  cursor: pointer;
+
+  &-primary {
+    background-color: #286efa;
+    color: #fff;
+  }
+
+  &-primary:hover {
+    background-color: #0057ff;
+    color: #fff;
+  }
+  &-important {
+    background-color: #db4437;
+    color: #fff;
+  }
+
+  &-important:hover {
+    background-color: #cc3629;
+    color: #fff;
+  }
+  &-outline {
+    background-color: transparent;
+    color: #286efa;
+    border: #286efa 1px solid;
+  }
+
+  &-outline:hover {
+    background-color: #286efa;
+    color: #fff;
+  }
+  &-gray {
+    background-color: transparent;
+    color: #4a4a4a;
+    border: #c4c4c4 1px solid;
+  }
+
+  &-gray:hover {
+    background-color: #4a4a4a;
+    color: #fff;
+  }
+  &-black {
+    background-color: #4a4a4a;
+    color: #fff;
+  }
+
+  &-black:hover {
+    background-color: #333333;
+    color: #fff;
+  }
+  &-md {
+    height: 34px;
+  }
+
+  &-lg {
+    height: 40px;
+  }
+
+  &-sm {
+    height: 30px;
+  }
+
+  &-xs {
+    height: 24px;
+  }
+
+  &-loading,
+  &-loading:hover {
+    background-color: #d8d8d8;
+    color: #fff;
+    border: 1px solid #d8d8d8;
+    cursor: wait;
+  }
+
+  &-disabled,
+  &-disabled:hover {
+    background-color: #d8d8d8;
+    color: #fff;
+    border: 1px solid #d8d8d8;
+    cursor: not-allowed;
+  }
+}
