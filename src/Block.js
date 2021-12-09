@@ -1,5 +1,5 @@
 import React, { Component, createElement } from "react";
-import "../assets/index.less";
+
 export default class Block extends Component {
   render() {
     const { el = "div", className, children, layout = "horizontal", horizontal, vertical, ...props } = this.props;

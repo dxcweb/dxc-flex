@@ -1,6 +1,6 @@
 {
   "name": "dxc-flex",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "react版本flex简写布局",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -15,7 +15,8 @@
   ],
   "scripts": {
     "pub":"npm publish",
-    "build": "nwb build-react-component",
+    "build": "nwb build-react-component && npm run buildLess",
+    "buildLess": "lessc assets/index.less assets/index.css",
     "clean": "nwb clean-module && nwb clean-demo",
     "prepublishOnly": "npm run build",
     "start": "nwb serve-react-demo",
@@ -50,5 +51,8 @@
   "keywords": [
     "react-component",
     "flex"
-  ]
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
 }
