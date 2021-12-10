@@ -1,6 +1,6 @@
 {
   "name": "dxc-flex",
-  "version": "3.0.3",
+  "version": "4.0.0",
   "description": "react版本flex简写布局",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -14,9 +14,10 @@
     "umd"
   ],
   "scripts": {
-    "pub":"npm publish",
+    "pub": "npm publish",
     "build": "nwb build-react-component && npm run buildLess",
     "buildLess": "lessc assets/index.less assets/index.css",
+    "buildLess2": "lessc index.less index.css",
     "clean": "nwb clean-module && nwb clean-demo",
     "prepublishOnly": "npm run build",
     "start": "nwb serve-react-demo",
@@ -24,11 +25,14 @@
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@emotion/react": "^11.7.0"
+  },
   "peerDependencies": {
-    "react": "16.x"
+    "react": "17.x"
   },
   "devDependencies": {
+    "@emotion/babel-plugin": "^11.3.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.0.0",
     "eslint-config-umi": "^1.6.0",
@@ -41,8 +45,8 @@
     "nwb": "0.24.x",
     "nwb-less": "^0.8.0",
     "prettier": "^2.0.5",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "author": "",
   "homepage": "",

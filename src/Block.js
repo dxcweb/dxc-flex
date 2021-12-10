@@ -1,16 +1,21 @@
-import React, { Component, createElement } from "react";
-
-export default class Block extends Component {
+/** @jsx jsx */
+import React from "react";
+import { jsx } from "@emotion/react";
+class Block extends React.PureComponent {
   render() {
-    const { el = "div", className, children, layout = "horizontal", horizontal, vertical, ...props } = this.props;
-    const classArr = className ? className.split(" ") : [];
+    const { children, layout = "horizontal", horizontal, vertical, ...props } = this.props;
+    const css = {};
     if (layout === "horizontal") {
-      classArr.push("block-horizontal-layout");
+      css.display = "flex";
+      css.flexFlow = "row";
     } else if (layout === "vertical") {
-      classArr.push("block-vertical-layout");
+      css.display = "flex";
+      css.flexFlow = "column";
     } else if (layout === "flow") {
-      classArr.push("block-flow-layout");
+      css.display = "flex";
+      css.flexFlow = "wrap";
     }
+
     let justify, align;
     if (layout === "horizontal" || layout === "flow") {
       justify = horizontal;
@@ -19,38 +24,41 @@ export default class Block extends Component {
       justify = vertical;
       align = horizontal;
     }
-
     switch (justify) {
       case "start":
-        classArr.push("block-justify-start");
+        css.justifyContent = "flex-start";
         break;
       case "center":
-        classArr.push("block-justify-center");
+        css.justifyContent = "center";
         break;
       case "end":
-        classArr.push("block-justify-end");
+        css.justifyContent = "flex-end";
         break;
       case "around":
-        classArr.push("block-justify-around");
+        css.justifyContent = "space-around";
         break;
       case "between":
-        classArr.push("block-justify-between");
+        css.justifyContent = "space-between";
         break;
       default:
     }
     switch (align) {
       case "start":
-        classArr.push("block-align-start");
+        css.alignItems = "flex-start";
         break;
       case "center":
-        classArr.push("block-align-center");
+        css.alignItems = "center";
         break;
       case "end":
-        classArr.push("block-align-end");
+        css.alignItems = "flex-end";
         break;
       default:
     }
-    const newProps = { ...props, className: classArr.join(" ") };
-    return createElement(el, newProps, children);
+    return (
+      <div css={css} {...props}>
+        {children}
+      </div>
+    );
   }
 }
+export default Block;
