@@ -28,6 +28,9 @@
   "dependencies": {
     "@emotion/react": "^11.7.0"
   },
+  "peerDependencies": {
+    "react": "17.x"
+  },
   "devDependencies": {
     "@emotion/babel-plugin": "^11.3.0",
     "babel-eslint": "^10.1.0",
